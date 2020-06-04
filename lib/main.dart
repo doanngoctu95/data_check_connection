@@ -1,9 +1,27 @@
+import 'dart:isolate';
+
 import 'package:data_connection_checker/data_connection_checker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterapp/connection/data_connectivity_service.dart';
+import 'package:flutterapp/state_management/mobx/ui/home_page.dart';
 import 'package:provider/provider.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyMobX());
+
+class MyMobX extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: HomePage()
+    );
+  }
+
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -22,6 +40,8 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+
+  Isolate a;
 }
 
 class MyHomePage extends StatefulWidget {

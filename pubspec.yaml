@@ -25,11 +25,19 @@ dependencies:
   cupertino_icons: ^0.1.2
   data_connection_checker: ^0.3.4
   provider: ^4.0.5
+  mobx:
+  flutter_mobx:
+  http:
+  json_annotation:
+  flutter_3d_obj: ^0.0.6
+  flutter_cube: ^0.0.5
+  flutter_redux: ^0.5.2
+  flutter_redux_dev_tools: ^0.3.0
 
 dev_dependencies:
+  build_runner:
   flutter_test:
     sdk: flutter
-
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -42,10 +50,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
-  #  - images/a_dot_ham.jpeg
+  assets:
+    - assets/
+    - assets/maps/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

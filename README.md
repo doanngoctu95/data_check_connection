@@ -1,1 +1,3 @@
-data_check_connection
+- data_check_connection
+- load 3d obj file
+- pattern state management: redux, m
